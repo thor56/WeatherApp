@@ -162,3 +162,11 @@ document.getElementById('search-button').addEventListener('click', async () => {
   updateForecastUI(forecastData);
   document.getElementById('suggestions').innerHTML = '';
 });
+
+
+const infoButton = document.getElementById('info-button');
+const infoContainer = document.querySelector('.info-container');
+
+infoButton.addEventListener('click', () => {
+  infoContainer.classList.toggle('expanded');
+});
